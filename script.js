@@ -6,30 +6,6 @@ const loginBtn = document.getElementById("btn");
 
 loginBtn.addEventListener("click", loginCheck);
 
-// PRIMEIRA VERSÃO QUE PENSEI
-
-// function loginCheck() {
-//   if (userName.value != "Admin") {
-//     alert("Nome de usuário incorreto. Favor ingresse nome válido");
-//   } else if (userPassword.value != "Admin") {
-//     alert("Senha incorreta. Tente novamente");
-//   } else {
-//     alert("Login efetuado com sucesso");
-//   }
-// }
-
-/// VERSÃO OPERADOR "||"
-
-// function loginCheck() {
-//   if (userName.value != "Admin" || userPassword.value != "Admin"){
-//     alert("Nome de usuário ou senha incorretos. Favor tentar novamente");
-//   } else {
-//     alert("Login efetuado com sucesso");
-//   }
-// }
-
-// VERSÃO "TERNÁRIO"
-
 function loginCheck() {
   userName.value != "Admin" || userPassword.value != "Admin"
     ? alert("Nome de usuário ou senha incorretos. Favor tentar novamente")
