@@ -1,0 +1,27 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.field-box{
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+#btn {
+  background-color: aquamarine;
+  padding: 8px 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#user-name, #password {
+  padding: 10px;
+}
