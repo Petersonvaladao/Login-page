@@ -1,27 +1,53 @@
+body {
+  font-family: 'Barlow', Tahoma, Geneva, Verdana, sans-serif;
+  color: #252525;
+}
+
 .container {
   max-width: 400px;
   margin: 0 auto;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.container p, span {
+  font-size: 0.8em;
+  color: #858585;
+
 }
 
 .field-box{
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 10px;
-  margin: 10px 0;
+  margin: 35px 0;
 }
 
 #btn {
-  background-color: aquamarine;
-  padding: 8px 40px;
-  border-radius: 10px;
+  color: #fff;
+  background-color: #7B62BE;
+  padding: 10px 0;
+  border-radius: 7px;
   border: none;
   cursor: pointer;
 }
 
+#btn:hover {
+  color: #fff;
+  background-color: #4f388d;
+}
+
 #user-name, #password {
-  padding: 10px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border: 1px solid #cacaca;
+  border-radius: 7px;
+}
+
+#user-name::placeholder,
+#password::placeholder {
+  color: #cacaca;
+  padding-left: 10px;
 }
